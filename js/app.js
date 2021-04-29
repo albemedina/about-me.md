@@ -53,3 +53,15 @@ else if(questionThree === 'yes' || questionThree === 'y'){
 
     alert('I have a dream job to!')
 }
+
+let questionFive = prompt('Did you enjoy this conversation');
+ // console.log(questionFive)
+ if(questionThree === 'no'  || questionThree === 'n'){
+
+    alert('Oh well you win some you lose some')
+ }
+
+else if(questionThree === 'yes' || questionThree === 'y'){
+
+    alert('Thanks for getting to know me!')
+}
