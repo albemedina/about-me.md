@@ -67,3 +67,16 @@ else if (questionFive === 'yes' || questionFive === 'y') {
 }
 
 alert ('Thanks for the quick chat enjoy the red bull ' + username );
+
+console.log (typeof (questionSix));
+let questionSixAnswer = 4;
+
+for (let i = 0; i < 4; i++){
+  let questionSix = parseInt( prompt(`${username} Can you guess what my favorite number is? Please enter a whole number between 1 to 10.`));
+  if (questionSix === 4){
+    alert ('congrats you guessed my favorite number have another red bull'+ username);
+    break;
+  } else if (questionSix < 4){
+    alert ('The answer is too low');
+  }
+}
