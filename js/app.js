@@ -80,3 +80,18 @@ for (let i = 0; i < 4; i++){
     alert ('The answer is too low');
   }
 }
+
+
+// let questionSeven = 20;
+// let attemptsAllowed= 7;
+
+// let faveNum= prompt('please enter a numerical whole number between 1 and 25');
+
+// console.log (typeof (faveNum));
+// // while(attemptsAllowed){
+
+// // }
+
+// for(let i = 0; i <attemptsAllowed; i++){
+//   alert ('almost there');
+// }
