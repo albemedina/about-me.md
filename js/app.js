@@ -82,16 +82,16 @@ for (let i = 0; i < 4; i++){
 }
 
 
-// let questionSeven = 20;
-// let attemptsAllowed= 7;
+ let questionSeven = 20;
+let attemptsAllowed= 7;
 
-// let faveNum= prompt('please enter a numerical whole number between 1 and 25');
+let faveNum= prompt('please enter a numerical whole number between 1 and 25');
 
-// console.log (typeof (faveNum));
-// // while(attemptsAllowed){
+console.log (typeof (faveNum));
+// while(attemptsAllowed){
 
-// // }
-
-// for(let i = 0; i <attemptsAllowed; i++){
-//   alert ('almost there');
 // }
+
+for(let i = 0; i <attemptsAllowed; i++){
+  alert ('almost there');
+}
