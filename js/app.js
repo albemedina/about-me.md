@@ -72,26 +72,37 @@ console.log (typeof (questionSix));
 let questionSixAnswer = 4;
 
 for (let i = 0; i < 4; i++){
-  let questionSix = parseInt( prompt(`${username} Can you guess what my favorite number is? Please enter a whole number between 1 to 10.`));
-  if (questionSix === 4){
+  let questionSixAnswer = parseInt( prompt(`${username} Can you guess what my favorite number is? Please enter a whole number between 1 to 10.`));
+  if (questionSixAnswer === 4){
     alert ('congrats you guessed my favorite number have another red bull'+ username);
     break;
-  } else if (questionSix < 4){
+  } else if (questionSixAnswer < 4){
     alert ('The answer is too low');
+  }
+
+  else if (questionSixAnswer > 4){
+    alert ('The answer is too high');
   }
 }
 
 
- let questionSeven = 20;
-let attemptsAllowed= 7;
-
-let faveNum= prompt('please enter a numerical whole number between 1 and 25');
-
-console.log (typeof (faveNum));
-// while(attemptsAllowed){
-
+// let questionSeven = prompt('What kind of Honda model car do I drive? Look how many models there are and guess lol').toLowerCase(); 20;{}
+// let attemptsAllowed= 7;
+// let questionSevenAnswer= 'Civic'
+// if
 // }
 
-for(let i = 0; i <attemptsAllowed; i++){
-  alert ('almost there');
+let questionSeven = prompt( 'what kind of honda do i drive? Only 7 chances to try!').toLowerCase();
+
+let Modelname = ['civic', 'crv', 'accord', 'pilot', 'altima', 'focus', 'nsx'];
+
+for (let i = 0; < 7; i++) ;{
+  console.log(Modelname[i]);
+  if (questionSeven === 'civic'){
+    alert('thats the car that I drive!')
+  }
+else if (questionSeven === 'crv')
+    alert('Nope wrong. Try again')
 }
+    }
+
