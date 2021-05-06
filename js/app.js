@@ -66,43 +66,60 @@ else if (questionFive === 'yes' || questionFive === 'y') {
   alert('Have a great day with your redbull!');
 }
 
-alert ('Thanks for the quick chat enjoy the red bull ' + username );
+alert('Thanks for the quick chat enjoy the red bull ' + username);
 
-console.log (typeof (questionSix));
-let questionSixAnswer = 4;
-
-for (let i = 0; i < 4; i++){
-  let questionSixAnswer = parseInt( prompt(`${username} Can you guess what my favorite number is? Please enter a whole number between 1 to 10.`));
-  if (questionSixAnswer === 4){
-    alert ('congrats you guessed my favorite number have another red bull'+ username);
-    break;
-  } else if (questionSixAnswer < 4){
-    alert ('The answer is too low');
-  }
-
-  else if (questionSixAnswer > 4){
-    alert ('The answer is too high');
+//function: key word 
+//q6 is the function
+// paranthesis would be arguments/ or hold parameters
+//let is the variable 
+//userGuess is the name
+//parseInt converst the string number to a number
+//break stops the for loop when the answer is correct
+function q6() {
+  const realSeattlAreaCode = 206;
+  for (let i = 0; i < 6; i++) {
+    let userGuess = parseInt(prompt('what is the area code for seattle washington?'));
+    if (userGuess === realSeattlAreaCode) {
+      alert('Yes! are you a local seattlite');
+      break;
+    }
+    else if (userGuess < realSeattlAreaCode) {
+      alert('Wrong are you from florida or something? the actual answer is higher');
+    }
+    else {
+      alert('Wrong just go ahead and google it at this point. Answer is lower');
+    }
   }
 }
-
+q6();
 
 // let questionSeven = prompt('What kind of Honda model car do I drive? Look how many models there are and guess lol').toLowerCase(); 20;{}
 // let attemptsAllowed= 7;
 // let questionSevenAnswer= 'Civic'
 // if
 // }
+function q7() {
 
-let questionSeven = prompt( 'what kind of honda do i drive? Only 7 chances to try!').toLowerCase();
+  let userGuessCorrectly = false;
+  let modelName = ['civic', 'crv', 'accord', 'pilot', 'altima', 'focus', 'nsx'];
 
-let Modelname = ['civic', 'crv', 'accord', 'pilot', 'altima', 'focus', 'nsx'];
-
-for (let i = 0; < 7; i++) ;{
-  console.log(Modelname[i]);
-  if (questionSeven === 'civic'){
-    alert('thats the car that I drive!')
-  }
-else if (questionSeven === 'crv')
-    alert('Nope wrong. Try again')
-}
+  for (let i = 0; i < 7; i++) {
+    let questionSeven = prompt('what kind of honda do i drive? Only 7 chances to try!').toLowerCase();
+    for (let j = 0; j < modelName.length; j++) {
+      if (questionSeven === modelName[j]) {
+        userGuessCorrectly = true;
+        break;
+      }
     }
-
+    if (userGuessCorrectly) {
+      alert('thats the car that I drive!');
+      break;
+    }
+  }
+}
+q7();
+//106 allowing you the amount of tries you can get
+//gets users to guess
+//108-113 sees if user puts in the correct
+//110 if user puts in correct answer it will equal to true
+// 114-117 React to what users guesses correctly
